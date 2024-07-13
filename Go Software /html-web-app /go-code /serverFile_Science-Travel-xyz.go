@@ -10,6 +10,23 @@ import (
 )
 
 
+// ,  ° . +
+func addEventToList(ctx context.Context, client *firestore.Client, addEvent) error {
+  _EventListData := addEvent
+
+  _, err := client.Collection("EventList").Doc("EventList").Set(ctx, _EventListData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+}
+
+
+
+
+
 func app_welcome_center_page() {
     
     
