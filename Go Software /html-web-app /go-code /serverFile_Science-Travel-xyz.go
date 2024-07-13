@@ -50,6 +50,27 @@ func appHandler(w http.ResponseWriter, r *http.Request) {
       pageList = pageList
   }
   
+  // ,  ° . +
+  if pagePath == "/inventory" {
+      pageTitle = "Inventory Page"
+      pageList = pageList
+  }
+  // ,  ° . +
+  if pagePath == "/itinerary" {
+      pageTitle = "Itinerary Page"
+      pageList = pageList
+  }
+  // ,  ° . +
+  if pagePath == "/quest_list" {
+      pageTitle = "Quest List Page"
+      pageList = pageList
+  }
+  // ,  ° . +
+  if pagePath == "/travel_log" {
+      pageTitle = "Travel Log Page"
+      pageList = pageList
+  }
+  
   
 // ,  ° . + 
   pageFilePath := template.Must(template.ParseFiles("layout_main_page.html"))
@@ -104,7 +125,6 @@ pageData := htmlPageData {
       pageTitle = "Profile Page"
       pageList = pageList
   }
-  
   
 // ,  ° . +
   if pagePath == "/portfolio" {
@@ -209,9 +229,21 @@ func main() {
   http.HandleFunc("/portfolio", pageHandler)
   http.HandleFunc("/resume", pageHandler)
   
-  
   // ,  ° . +
   http.HandleFunc("/settings", appHandler)
+  
+    // ,  ° . +
+  http.HandleFunc("/inventory", pageHandler)
+    // ,  ° . +
+  http.HandleFunc("/itinerary", pageHandler)
+    // ,  ° . +
+  http.HandleFunc("/quest_list", pageHandler)
+    // ,  ° . +
+  http.HandleFunc("/travel_log", pageHandler)
+    // ,  ° . +
+  http.HandleFunc("/quest_needs", pageHandler)
+    // ,  ° . +
+  http.HandleFunc("/quest_people", pageHandler)
   
 
 
