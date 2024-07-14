@@ -21,7 +21,59 @@ func addEventToList(ctx context.Context, client *firestore.Client, addEvent) err
     log.Printf("An error has occurred: %s", err)
   }
   return err
-}
+} // , - • ~
+
+// ,  ° . +
+func addEventToList(ctx context.Context, client *firestore.Client, addEvent) error {
+  _EventListData := addEvent
+
+  _, err := client.Collection("EventList").Doc("EventList").Set(ctx, _EventListData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
+
+// ,  ° . +
+func addEventToList(ctx context.Context, client *firestore.Client, addEvent) error {
+  _EventListData := addEvent
+
+  _, err := client.Collection("EventList").Doc("EventList").Set(ctx, _EventListData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
+
+// ,  ° . +
+func addEventToList(ctx context.Context, client *firestore.Client, addEvent) error {
+  _EventListData := addEvent
+
+  _, err := client.Collection("EventList").Doc("EventList").Set(ctx, _EventListData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
+
+// ,  ° . +
+func addTravelLog(ctx context.Context, client *firestore.Client, addTravelLog) error {
+  _TravelLogData := addTravelLog
+
+  _, err := client.Collection("_TravelLog").Doc("_TravelLog").Set(ctx, _TravelLogData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
 
 
 
