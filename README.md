@@ -17,3 +17,13 @@ _ ` ... ` ~
 + _ Quest List ~ ° . +
 + _ Travel Log ~ ° . +
 
+
+--- 
+
+### _ Visit, Hawaii Edition ° . ~
+
++ _ Explore Oahu
++ _ See The Ocean 
++ _ See Dinosaurs
++ _ Eat Fish
++ _ Sleep in Beds

@@ -24,10 +24,10 @@ func addEventToList(ctx context.Context, client *firestore.Client, addEvent) err
 } // , - • ~
 
 // ,  ° . +
-func addInventoryToList(ctx context.Context, client *firestore.Client, addInventory) error {
-  _InventoryListData := addInventory
+func addEventToList(ctx context.Context, client *firestore.Client, addEvent) error {
+  _EventListData := addEvent
 
-  _, err := client.Collection("_InventoryList").Doc("_InventoryList").Set(ctx, _InventoryListData)
+  _, err := client.Collection("EventList").Doc("EventList").Set(ctx, _EventListData)
         
   if err != nil {
     // Handle any errors
@@ -37,10 +37,10 @@ func addInventoryToList(ctx context.Context, client *firestore.Client, addInvent
 } // , - • ~
 
 // ,  ° . +
-func addItineraryToList(ctx context.Context, client *firestore.Client, addItinerary) error {
-  _ItineraryListData := addItinerary
+func addEventToList(ctx context.Context, client *firestore.Client, addEvent) error {
+  _EventListData := addEvent
 
-  _, err := client.Collection("_ItineraryList").Doc("_ItineraryList").Set(ctx, _ItineraryListData)
+  _, err := client.Collection("EventList").Doc("EventList").Set(ctx, _EventListData)
         
   if err != nil {
     // Handle any errors
@@ -50,10 +50,10 @@ func addItineraryToList(ctx context.Context, client *firestore.Client, addItiner
 } // , - • ~
 
 // ,  ° . +
-func addQuestToList(ctx context.Context, client *firestore.Client, addQuestList) error {
-  _QuestListData := addQuestList
+func addEventToList(ctx context.Context, client *firestore.Client, addEvent) error {
+  _EventListData := addEvent
 
-  _, err := client.Collection("_QuestList").Doc("_QuestList").Set(ctx, _QuestListData)
+  _, err := client.Collection("EventList").Doc("EventList").Set(ctx, _EventListData)
         
   if err != nil {
     // Handle any errors
